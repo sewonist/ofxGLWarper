@@ -9,7 +9,7 @@
 void ofxGLWarper::setup(int _resX, int _resY){	 
 	//we run at 60 fps!
 	//ofSetVerticalSync(true);
-	ofUnregisterMouseEvents(this);
+	ofRegisterMouseEvents(this);
 	
 	corners[0].x = 0.0;
 	corners[0].y = 0.0;
@@ -42,12 +42,12 @@ bool ofxGLWarper::isActive(){
 }
 //--------------------------------------------------------------
 void ofxGLWarper::activate(){
-	ofRegisterMouseEvents(this);
+	//ofRegisterMouseEvents(this);
 	active=true;
 }
 //--------------------------------------------------------------
 void ofxGLWarper::deactivate(){
-	ofUnregisterMouseEvents(this);
+	//ofUnregisterMouseEvents(this);
 	active=false;
 }
 //--------------------------------------------------------------
