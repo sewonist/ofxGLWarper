@@ -42,7 +42,7 @@ bool ofxGLWarper::isActive(){
 }
 //--------------------------------------------------------------
 void ofxGLWarper::activate(){
-	//ofRegisterMouseEvents(this);
+	ofRegisterMouseEvents(this);
 	active=true;
 }
 //--------------------------------------------------------------
